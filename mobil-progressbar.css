@@ -27,9 +27,9 @@
 
 
     .track-section-mobil {
-        padding: 70px;
+        padding: 30px;
         display: flex;
-        column-gap: 100px;
+        column-gap: 70px;
         color: var(--text);
     }
 
@@ -46,7 +46,7 @@
         position: relative;
         top: 0;
         right: 0;
-        width: 30px;
+        min-width: 10px;
         background-color: var(--bg);
         border: 1px solid var(--accent);
         border-radius: 6px;
