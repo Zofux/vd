@@ -18,13 +18,19 @@
 
     <nav>
         <div class="logo">
-            <img src="./img/logo-ikon.png" alt="">
-            <p class="logo-name">Vebjørn Design</p>
+            <a href="#hjem">
+                <img src="./img/logo-ikon.png" alt="">
+                <p class="logo-name">Vebjørn Design</p>
+            </a>
         </div>
         <ul class="links">
-            <li class="link">Tjenester</li>
+            <a href="#planer">
+                <li class="link">Tjenester</li>
+            </a>
             <li class="link">Om VD</li>
-            <li id="kontakt">Kontakt<i class="fa-solid fa-paper-plane"></i></li>
+            <a href="#kontakt-seksjon">
+                <li id="kontakt">Kontakt<i class="fa-solid fa-paper-plane"></i></li>
+            </a>
         </ul>
         <div class="burger" id="burger">
             <div class="line topp"></div>
@@ -39,7 +45,7 @@
             <li id="kontakt">Kontakt<i class="fa-solid fa-paper-plane"></i></li>
         </div>
     </ul>
-    <section class="top">
+    <section id="hjem" class="top">
         <div class="top-1">
             <h1>
                 "Design som <span class="skille">skiller</span> seg ut.
@@ -219,7 +225,7 @@
         </path>
     </svg>
 
-    <section class="planer">
+    <section id="planer" class="planer">
         <h1 data-aos="fade-up">Finn pakken som passer deg</h1>
         <div class="planer-kort">
             <div data-aos="fade-up">
@@ -291,10 +297,55 @@
                 </div>
             </div>
         </div>
+        <div class="flere-funksjoner">
+            <i class="fa-solid fa-user-group"></i>
+            <p>Trenger du flere funksjoner for bedriften din?</p>
+            <a href="#kontakt-seksjon">Kontakt oss</a>
+        </div>
     </section>
 
+    <section id="kontakt-seksjon" class="kontakt-seksjon">
+        <div class="kontakt-top">
+            <h1>La oss lage noe <span class="skille">kult</span> sammen</h1>
+            <div class="kjapp-kontakt">
+                <a href="tel:+4799459557" class="kjapp-kontakt-link"><i class="fa-solid fa-phone"></i> +47 994 59
+                    557</a>
+                <a class="kjapp-kontakt-link" href="mailto:vebjornoyan@gmail.com"><i
+                        class="fa-solid fa-envelope"></i>vebjornoyan@gmail.com</a>
+            </div>
+        </div>
+
+        <div>
+            <h1>Send oss en melding</h1>
+            <form class="kontakt-skjema" data-netlify="true" method="POST" netlify-honeypot="bot-field">
+                <input type="hidden" name="form-name" value="kontakt" />
+
+                <div class="input-wrapper">
+                    <input type="text" name="navn" id="navn" placeholder=" " required />
+                    <label for="navn">Navn <span class="stjerne">*</span></label>
+                </div>
+
+                <div class="input-wrapper">
+                    <input type="email" name="epost" id="epost" placeholder=" " required />
+                    <label for="epost">E-post <span class="stjerne">*</span></label>
+                </div>
+
+                <div class="input-wrapper">
+                    <input type="tel" name="telefon" id="telefon" placeholder=" " />
+                    <label for="telefon">Telefonnummer</label>
+                </div>
+
+                <div class="input-wrapper">
+                    <textarea name="melding" id="melding" rows="5" placeholder=" " required></textarea>
+                    <label for="melding">Hva kan vi hjelpe deg med? <span class="stjerne">*</span></label>
+                </div>
 
 
+                <button id="kontakt-knapp" type="submit">Send melding</button>
+            </form>
+        </div>
+
+    </section>
 
     <i id="mode" class="fa-solid fa-moon"></i>
 

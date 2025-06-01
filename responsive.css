@@ -56,6 +56,22 @@
     display: none;
 }
 
+@media screen and (max-width:1200px){
+    .kontakt-seksjon {
+        padding: 40px;
+        gap: 50px;
+    }
+    .kontakt-seksjon h1 {
+        font-size: 2.5rem;
+    }
+    .kontakt-seksjon h2 {
+        font-size: 1.4rem;
+    }
+     .kjapp-kontakt a {
+        font-size: 1rem;
+    }
+}
+
 @media screen and (max-width: 800px) {
     #burger {
         position: relative;
@@ -138,6 +154,36 @@
     }
     .top-1 h1 {
         font-size: 2rem;
+    }
+    .planer h1 {
+        font-size: 2rem;
+    }
+    .kontakt-seksjon {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        padding-top: 40px;
+        gap: 0px;
+    }
+    .kontakt-seksjon h1 {
+        font-size: 2rem;
+    }
+    .kontakt-seksjon h2 {
+        display: none;
+    }
+    .kjapp-kontakt {
+        gap: 5px;
+        margin-top: 15px;
+        margin-bottom: 50px;
+    }
+    .kjapp-kontakt a {
+        font-size: 1rem;
+    }
+    #kontakt-knapp {
+        width: 100%;
+        background-color: var(--accent);
+        color: var(--white);
+        font-weight: bolder;
     }
 }
 
