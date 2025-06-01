@@ -47,10 +47,12 @@
             background-color: var(--second);
             color: var(--text);
             overflow-x: hidden;
+            box-sizing: border-box;
         }
 
         .personvern {
-            padding: 70px 100px 100px 100px;
+            padding: 70px 50px 100px 100px;
+            box-sizing: border-box;
         }
         .personvern h1 {
             margin-bottom: 10px;
@@ -63,9 +65,18 @@
             color: #0078ce;
         }
 
-        @media screen and (max-width) {
+        @media screen and (max-width: 600px) {
             .personvern {
                 padding: 70px 20px 100px 20px;
+            }
+        }
+        @media screen and (max-width: 400px) {
+            .personvern h1 {
+                font-size: 1.5rem;
+            }
+            .personvern h2 {
+                font-size: 1.2rem;
+                font-weight: bolder;
             }
         }
     </style>
@@ -86,7 +97,7 @@
                 <li class="link">Om VD</li>
             </a>
             <a href="/">
-                <li id="kontakt">Hjem<i class="fa-solid fa-paper-plane"></i></li>
+                <li class="link">Til forsiden</li>
             </a>
         </ul>
         <div class="burger" id="burger">
