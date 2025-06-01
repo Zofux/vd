@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vebjørn Design</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./mobil-progressbar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="./img/logo-ikon.png">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="./img/logo-ikon.png" alt="">
+            <p class="logo-name">Vebjørn Design</p>
+        </div>
+        <ul class="links">
+            <li class="link">Tjenester</li>
+            <li class="link">Om VD</li>
+            <li id="kontakt">Kontakt<i class="fa-solid fa-paper-plane"></i></li>
+        </ul>
+        <div class="burger" id="burger">
+            <div class="line topp"></div>
+            <div class="line middle"></div>
+            <div class="line bottom"></div>
+        </div>
+    </nav>
+    <ul class="mobile-links" id="mobile-links">
+        <div class="mobile-links-container">
+            <li class="link">Tjenester</li>
+            <li class="link">Om VD</li>
+            <li id="kontakt">Kontakt<i class="fa-solid fa-paper-plane"></i></li>
+        </div>
+    </ul>
+    <section class="top">
+        <div class="top-1">
+            <h1 data-aos="fade-up">
+                "Design som <span class="skille">skiller</span> seg ut.
+                <span id="typewriter"></span>
+            </h1>
+            <div class="container">
+                <h3 id="typewriter-2"></h3>
+            </div>
+        </div>
+        <div class="top-2"></div>
+    </section>
+
+    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#0099ff" fill-opacity="1"
+            d="M0,96L30,101.3C60,107,120,117,180,138.7C240,160,300,192,360,197.3C420,203,480,181,540,160C600,139,660,117,720,128C780,139,840,181,900,181.3C960,181,1020,139,1080,138.7C1140,139,1200,181,1260,208C1320,235,1380,245,1410,250.7L1440,256L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+        </path>
+    </svg>
+
+    <section class="progress">
+        <h1 data-aos="fade-up">Din vei til en ny nettside</h1>
+
+        <div class="track-section" id="trackedSection">
+            <div class="track-section1">
+                <div id="høyre" class="track-card">
+                    <h2>1. Første samtale</h2>
+                    <p>Vi starter med en uforpliktende samtale hvor vi blir kjent med deg og bedriften din. Her
+                        kartlegger vi behovene dine, målgruppen du ønsker å nå, og hvilke funksjoner og uttrykk du ser
+                        for deg på nettsiden. Du trenger ikke å vite nøyaktig hva du vil ha – det er vår jobb å hjelpe
+                        deg å finne det ut.</p>
+                </div>
+                <div></div>
+                <div id="høyre" class="track-card">
+                    <h2>3. Planlegging og struktur</h2>
+                    <p>Vi starter prosjektet med å lage en struktur for nettsiden, ofte kalt en sitemap. Sammen ser vi
+                        på hvordan innholdet skal organiseres og hvilke sider og funksjoner som trengs. Vi avklarer også
+                        designretning og tekniske valg.</p>
+                </div>
+                <div></div>
+                <div id="høyre" class="track-card">
+                    <h2>5. Utvikling</h2>
+                    <p>Når designet er godkjent, setter vi i gang med utviklingen. Vi bygger nettsiden i henhold til
+                        planen og integrerer eventuelle funksjoner som kontaktskjema, booking, nettbutikk eller
+                        flerspråklig støtte. Du får underveis tilgang til en testversjon du kan følge med på.</p>
+                </div>
+                <div></div>
+                <div id="høyre" class="track-card">
+                    <h2>7. Revisjon og godkjenning</h2>
+                    <p>Du får se gjennom hele nettsiden før vi lanserer. Her har du mulighet til å gi tilbakemeldinger
+                        og be om eventuelle justeringer. Ingenting publiseres før du er 100 % fornøyd.</p>
+                </div>
+                <div></div>
+                <div class="track-card">
+                    <h2>9. Drift og videre support</h2>
+                    <p>Etter lansering kan vi tilby vedlikeholdsavtale, sikkerhetsoppdateringer og løpende support.
+                        Ønsker du hjelp med videreutvikling, innhold eller markedsføring – så er vi bare en telefon
+                        eller e-post unna.</p>
+                </div>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+
+                <!-- Checkpoints -->
+                <div class="checkpoint" data-index="0"><i class="fa-solid fa-check"></i></div>
+                <div class="checkpoint" data-index="1"><i class="fa-solid fa-check"></i></div>
+                <div class="checkpoint" data-index="2"><i class="fa-solid fa-check"></i></div>
+                <div class="checkpoint" data-index="3"><i class="fa-solid fa-check"></i></div>
+                <div class="checkpoint" data-index="4"><i class="fa-solid fa-check"></i></div>
+                <div class="checkpoint" data-index="5"><i class="fa-solid fa-check"></i></div>
+                <div class="checkpoint" data-index="6"><i class="fa-solid fa-check"></i></div>
+                <div class="checkpoint" data-index="7"><i class="fa-solid fa-check"></i></div>
+                <div class="checkpoint" data-index="8"><i class="fa-solid fa-check"></i></div>
+            </div>
+
+            <div class="track-section2">
+                <div></div>
+                <div></div>
+                <div class="track-card">
+                    <h2>2. Tilbud og avtale</h2>
+                    <p>Etter samtalen sender vi et skreddersydd tilbud med pris og beskrivelse av leveransen. Når du
+                        godkjenner tilbudet, inngår vi en avtale som sikrer at begge parter vet hva som skal leveres,
+                        til hvilken tid og til hvilken pris.</p>
+                </div>
+                <div></div>
+                <div class="track-card">
+                    <h2> 4. Design</h2>
+                    <p>Vi utarbeider designskisser basert på din visuelle profil og våre anbefalinger. Du får se hvordan
+                        nettsiden vil se ut på mobil og desktop, og har mulighet til å komme med tilbakemeldinger før vi
+                        går videre. Målet er et moderne, brukervennlig og unikt design som passer din merkevare.</p>
+                </div>
+                <div></div>
+                <div class="track-card">
+                    <h2>6. Testing</h2>
+                    <p>Før lansering tester vi nettsiden grundig. Vi sjekker at alt fungerer på ulike skjermstørrelser
+                        og nettlesere, at nettsiden er rask og sikker, og at det ikke finnes tekniske feil.</p>
+                </div>
+                <div></div>
+                <div class="track-card">
+                    <h2>8. Lansering</h2>
+                    <p>Når alt er klart, publiserer vi nettsiden på ditt domene. Vi setter opp nødvendige verktøy som
+                        Google Analytics og sørger for at nettsiden blir synlig i søkemotorer.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="progress-mobil">
+        <h1 data-aos="fade-up">Din vei til en ny nettside</h1>
+
+        <div class="track-section-mobil" id="trackedSection-mobil">
+            <div class="progress-bar-mobil">
+                <div class="progress-fill-mobil" id="progressFill-mobil"></div>
+
+                <!-- Checkpoints -->
+                <div class="checkpoint-mobil" data-index="0"><i class="fa-solid fa-check"></i></div>
+                <div class="checkpoint-mobil" data-index="1"><i class="fa-solid fa-check"></i></div>
+                <div class="checkpoint-mobil" data-index="2"><i class="fa-solid fa-check"></i></div>
+                <div class="checkpoint-mobil" data-index="3"><i class="fa-solid fa-check"></i></div>
+                <div class="checkpoint-mobil" data-index="4"><i class="fa-solid fa-check"></i></div>
+                <div class="checkpoint-mobil" data-index="5"><i class="fa-solid fa-check"></i></div>
+                <div class="checkpoint-mobil" data-index="6"><i class="fa-solid fa-check"></i></div>
+                <div class="checkpoint-mobil" data-index="7"><i class="fa-solid fa-check"></i></div>
+                <div class="checkpoint-mobil" data-index="8"><i class="fa-solid fa-check"></i></div>
+            </div>
+            <div class="track-section1-mobil">
+                <div class="track-card-mobil">
+                    <h2>1. Første samtale</h2>
+                    <p>Vi starter med en uforpliktende samtale hvor vi blir kjent med deg og bedriften din.</p>
+                </div>
+                <div class="track-card-mobil">
+                    <h2>2. Tilbud og avtale</h2>
+                    <p>Etter samtalen sender vi et tilbud med pris og leveransebeskrivelse. Når du godkjenner, inngår vi
+                        en avtale med tydelige rammer for innhold, tid og pris.</p>
+                </div>
+                <div class="track-card-mobil">
+                    <h2>3. Planlegging og struktur</h2>
+                    <p>Vi starter med en sitemap – en struktur for nettsiden. Sammen avklarer vi innhold, sider,
+                        funksjoner, designretning og tekniske valg.</p>
+                </div>
+                <div class="track-card-mobil">
+                    <h2>4. Design</h2>
+                    <p>Vi lager designskisser basert på din profil. Du får se forslag for mobil og desktop og gi
+                        tilbakemeldinger før vi går videre.</p>
+                </div>
+                <div class="track-card-mobil">
+                    <h2>5. Utvikling</h2>
+                    <p>Etter godkjent design bygger vi nettsiden og legger inn ønskede funksjoner. Du får tilgang til en
+                        testversjon underveis.</p>
+                </div>
+                <div class="track-card-mobil">
+                    <h2>6. Testing</h2>
+                    <p>Vi tester nettsiden grundig på ulike skjermer og nettlesere for å sikre ytelse, sikkerhet og
+                        funksjonalitet.</p>
+                </div>
+                <div class="track-card-mobil">
+                    <h2>7. Revisjon og godkjenning</h2>
+                    <p>Du gjennomgår nettsiden og gir siste tilbakemeldinger før publisering. Ingenting lanseres før du
+                        er helt fornøyd.</p>
+                </div>
+                <div class="track-card-mobil">
+                    <h2>8. Lansering</h2>
+                    <p>Vi publiserer nettsiden og setter opp verktøy som Google Analytics. Nettsiden gjøres synlig i
+                        søkemotorer.</p>
+                </div>
+                <div class="track-card-mobil">
+                    <h2>9. Drift og videre support</h2>
+                    <p>Vi tilbyr vedlikehold, sikkerhetsoppdateringer og hjelp ved behov. Trenger du videreutvikling, er
+                        vi tilgjengelige.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <svg class="icon2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#0099ff" fill-opacity="1"
+            d="M0,160L21.8,170.7C43.6,181,87,203,131,218.7C174.5,235,218,245,262,256C305.5,267,349,277,393,256C436.4,235,480,181,524,144C567.3,107,611,85,655,101.3C698.2,117,742,171,785,208C829.1,245,873,267,916,261.3C960,256,1004,224,1047,229.3C1090.9,235,1135,277,1178,245.3C1221.8,213,1265,107,1309,106.7C1352.7,107,1396,213,1418,266.7L1440,320L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z">
+        </path>
+    </svg>
+
+    <section class="planer">
+        <h1 data-aos="fade-up">Finn pakken som passer deg</h1>
+        <div class="planer-kort">
+            <div data-aos="fade-up">
+                <div class="plan">
+                    <div class="plan-top">
+                        <i id="plan-ikon" class="fas fa-rocket"></i>
+                        <h3 class="plan-name">Basic</h3>
+                        <p class="plan-price">fra 9 900 kr inkl. MVA</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-circle-check"></i>Unik HTML, JS og CSS kode</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Inntil 5 undersider</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Standard malbasert design</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Responsiv (mobilvennlig)</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Enkelt kontaktskjema</li>
+                        <li><i class="fa-solid fa-circle-check"></i>HTTPS og domene-tilkobling</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Hjelp med hosting</li>
+
+                        <li><i class="fa-solid fa-circle-xmark"></i><span class="dashed">Blogg</span></li>
+                        <li><i class="fa-solid fa-circle-xmark"></i><span class="dashed">Nyhetsbrev</span></li>
+                        <li><i class="fa-solid fa-circle-xmark"></i><span class="dashed">Flerspråklig støtte</span></li>
+                        <li><i class="fa-solid fa-circle-xmark"></i><span class="dashed">Innloggingsportal</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-aos="fade-up">
+                <div class="plan popular">
+                    <div class="plan-top">
+                        <i id="plan-ikon" class="fas fa-laptop-code"></i>
+                        <h3 class="plan-name">Pro</h3>
+                        <p class="plan-price">fra 14 900 kr inkl. MVA</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-circle-check"></i>Unik HTML, JS og CSS kode</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Inntil 10 undersider</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Skreddersydd design</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Responsiv (mobilvennlig)</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Avansert kontaktskjema</li>
+                        <li><i class="fa-solid fa-circle-check"></i>HTTPS og domene-tilkobling</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Hjelp med hosting</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Blogg</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Nyhetsbrev</li>
+
+                        <li><i class="fa-solid fa-circle-xmark"></i><span class="dashed">Flerspråklig støtte</span></li>
+                        <li><i class="fa-solid fa-circle-xmark"></i><span class="dashed">Innloggingsportal</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div data-aos="fade-up">
+                <div class="plan">
+                    <div class="plan-top">
+                        <i id="plan-ikon" class="fas fa-gem"></i>
+                        <h3 class="plan-name">Premium</h3>
+                        <p class="plan-price">fra 24 900 kr inkl. MVA</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li><i class="fa-solid fa-circle-check"></i>Unik HTML, JS og CSS kode</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Ubegrenset antall undersider</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Komplett skreddersydd design</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Responsiv (mobilvennlig)</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Avansert kontaktskjema</li>
+                        <li><i class="fa-solid fa-circle-check"></i>HTTPS og domene-tilkobling</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Hjelp med hosting</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Blogg</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Nyhetsbrev</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Flerspråklig støtte</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Innloggingsportal</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <i id="mode" class="fa-solid fa-moon"></i>
+
+    <script src="./index.js"></script>
+    <script src="./burger.js"></script>
+    <script src="./mobil-progressbar.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true
+        });
+    </script>
+</body>
+
+</html>
