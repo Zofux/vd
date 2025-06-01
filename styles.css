@@ -458,6 +458,7 @@ button:focus {
   outline: none;
 }
 
+
 .kontakt-skjema button {
   background-color: var(--second);
   width: 200px;
@@ -494,7 +495,7 @@ button:focus {
   font-size: 1rem;
   border-radius: 6px;
   background-color: var(--bg);
-  color: var(--black);
+  color: var(--text);
   outline: none;
   resize: none;
   border: none;
