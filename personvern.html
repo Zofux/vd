@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personvernerklæring | Vebjørn Design</title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="./img/logo-ikon.png">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --bg: #fbfbfe;
+            --second: #eeedf2;
+            --nav-line: #c2c1e1;
+            --indent: #747385;
+            --link-color: rgb(49, 103, 240);
+            --text: #050315;
+            --accent: #d15361;
+            --dark-accent: #871c28;
+            --white: #fbfbfe;
+            --shadow: rgba(0, 0, 0, 0.1);
+            --black: #010104;
+        }
+
+        [data-theme="dark"] {
+            --bg: #010104;
+            --second: rgb(15, 15, 15);
+            --indent: #747385;
+            --text: #ebe9fc;
+            --nav-line: rgba(255, 255, 255, 0.1);
+            --accent: #d15361;
+            --dark-accent: #620510;
+            --link-color: rgb(49, 103, 240);
+            --white: #fbfbfe;
+            --shadow: #ebe9fc0c;
+            --black: #010104;
+        }
+
+        body {
+            background-color: var(--second);
+            color: var(--text);
+        }
+
+        .personvern {
+            padding: 70px 100px 100px 100px;
+        }
+        .personvern h1 {
+            margin-bottom: 10px;
+        }
+        .personvern h2 {
+            margin-top: 20px;
+        }
+
+        a {
+            color: #0078ce;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav>
+        <div class="logo">
+            <a href="#hjem">
+                <img src="./img/logo-ikon.png" alt="">
+                <p class="logo-name">Vebjørn Design</p>
+            </a>
+        </div>
+        <ul class="links">
+            <a href="/">
+                <li class="link">Om VD</li>
+            </a>
+            <a href="/">
+                <li id="kontakt">Hjem<i class="fa-solid fa-paper-plane"></i></li>
+            </a>
+        </ul>
+        <div class="burger" id="burger">
+            <div class="line topp"></div>
+            <div class="line middle"></div>
+            <div class="line bottom"></div>
+        </div>
+    </nav>
+    <ul class="mobile-links" id="mobile-links">
+        <div class="mobile-links-container">
+             <a href="/">
+                <li class="link">Om VD</li>
+            </a>
+            <a href="/">
+                <li class="link">Til forsiden</i></li>
+            </a>
+        </div>
+    </ul>
+
+    <div class="personvern">
+        <h1>Personvernerklæring</h1>
+
+        <p>Vebjørn Design tar personvern på alvor. Denne erklæringen forklarer hvilke data vi samler inn, hvorfor vi
+            gjør
+            det, og hvordan de håndteres.</p>
+
+        <h2>1. Hvilke data samles inn?</h2>
+        <ul>
+            <li>Navn (hvis oppgitt i kontaktskjema)</li>
+            <li>E-postadresse (for å kunne svare på henvendelser)</li>
+            <li>Telefonnummer (valgfritt)</li>
+        </ul>
+
+        <h2>2. Hvordan samles informasjonen inn?</h2>
+        <p>Vi bruker et kontaktskjema levert av <strong>Netlify Forms</strong>. Når du sender inn skjemaet, lagres
+            informasjonen sikkert i Netlifys systemer og er kun tilgjengelig for oss.</p>
+
+        <h2>3. Hva brukes informasjonen til?</h2>
+        <p>Opplysningene brukes kun for å svare på henvendelser. De deles ikke med tredjeparter og slettes på
+            forespørsel.
+        </p>
+
+        <h2>4. Informasjonskapsler og lokal lagring</h2>
+        <p>Vi lagrer din foretrukne visning (lys/mørk modus) i din nettlesers <code>localStorage</code>. Dette er helt
+            anonymt og brukes kun for brukeropplevelse.</p>
+
+        <h2>5. Dine rettigheter</h2>
+        <p>Du kan når som helst be om innsyn i, eller sletting av, data vi har om deg. Send en e-post til <a
+                href="mailto:vebjornoyan@gmail.com">vebjornoyan@gmail.com</a> for å utøve dine rettigheter.</p>
+
+        <h2>6. Endringer</h2>
+        <p>Vi forbeholder oss retten til å oppdatere denne erklæringen. Siste oppdatering: juni 2025.</p>
+
+        <p><a href="/">← Tilbake til forsiden</a></p>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-box-logo">
+                <div class="footer-logo">
+                    <img src="./img/logo-ikon.png" alt="">
+                    <h2>Vebjørn Design</h2>
+                </div>
+                <p>"Design som <span class="skille">skiller</span> seg ut. Kode som fungerer"</p>
+            </div>
+            <div class="footer-box">
+                <div class="footer-links">
+                    <h2>Snarveier</h2>
+                    <a href="./index.html">Til forsiden</a>
+                    <a href="">Om VD</a>
+                </div>
+                <div class="footer-links">
+                    <h2>Kontakt oss</h2>
+                    <a href="tel:+4799459557"><i class="fa-solid fa-phone"></i> +47 994 59557</a>
+                    <a href="mailto:vebjornoyan@gmail.com"><i class="fa-solid fa-envelope"></i>vebjornoyan@gmail.com</a>
+                </div>
+            </div>
+        </div>
+        <p class="footer-copyright">&copy; Vebjørn Design 2025 - Alle rettigheter reservert</p>
+    </footer>
+
+    <i id="mode" class="fa-solid fa-moon"></i>
+
+
+    <script src="./burger.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
