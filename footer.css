@@ -1,0 +1,129 @@
+:root {
+    --bg: #fbfbfe;
+    --second: #eeedf2;
+    --nav-line: #c2c1e1;
+    --indent: #747385;
+    --link-color: rgb(49, 103, 240);
+    --text: #050315;
+    --accent: #d15361;
+    --dark-accent: #871c28;
+    --white: #fbfbfe;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --black: #010104;
+}
+
+[data-theme="dark"] {
+    --bg: #010104;
+    --second: rgb(15, 15, 15);
+    --indent: #747385;
+    --text: #ebe9fc;
+    --nav-line: rgba(255, 255, 255, 0.1);
+    --accent: #d15361;
+    --dark-accent: #620510;
+    --link-color: rgb(49, 103, 240);
+    --white: #fbfbfe;
+    --shadow: #ebe9fc0c;
+    --black: #010104;
+}
+
+
+
+footer {
+    background-color: var(--black);
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    color: var(--white);
+    flex-direction: column;
+}
+
+footer a {
+    color: var(--white);
+    text-decoration: none;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+footer a:hover {
+    color: var(--indent);
+    transition: all 0.3s ease-in-out;
+    transform: translateX(1px);
+}
+
+footer i {
+    margin-right: 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content h2 {
+    margin-bottom: 10px;
+}
+
+.footer-logo img {
+    position: relative;
+    height: 30px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.footer-box {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-logo {
+    display: flex;
+    color: var(--accent);
+}
+
+.footer-box-logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-copyright {
+    color: rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 860px) {
+    footer {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .footer-box {
+        justify-content: center;
+    }
+    .footer-logo {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer-box {
+        flex-direction: column;
+    }
+    .footer-content {
+        gap: 25px;
+    }
+    footer {
+        gap: 50px;
+    }
+}

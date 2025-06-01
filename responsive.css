@@ -52,22 +52,26 @@
 .bottom {
     bottom: 4px;
 }
+
 .mobile-links {
     display: none;
 }
 
-@media screen and (max-width:1200px){
+@media screen and (max-width:1200px) {
     .kontakt-seksjon {
         padding: 40px;
         gap: 50px;
     }
+
     .kontakt-seksjon h1 {
         font-size: 2.5rem;
     }
+
     .kontakt-seksjon h2 {
         font-size: 1.4rem;
     }
-     .kjapp-kontakt a {
+
+    .kjapp-kontakt a {
         font-size: 1rem;
     }
 }
@@ -108,6 +112,7 @@
     .links {
         display: none;
     }
+
     .mobile-links {
         display: flex;
         align-items: center;
@@ -126,6 +131,7 @@
         transform: translateX(300px);
         transition: all 0.4s ease-in-out;
     }
+
     .mobile-links-container {
         display: flex;
         flex-direction: column;
@@ -134,30 +140,39 @@
         height: 70%;
         font-size: 1.2rem;
     }
+
     .mobile-links.open {
         transform: translateX(0);
         transition: all 0.4s ease-in-out;
     }
+
     .top {
         padding: 20px;
         margin-top: 50px;
         margin-bottom: 130px;
     }
-    .icon, .icon2 {
+
+    .icon,
+    .icon2 {
         display: none;
     }
+
     .progress {
         padding-top: 50px;
     }
+
     .top-2 {
         display: none;
     }
+
     .top-1 h1 {
         font-size: 2rem;
     }
+
     .planer h1 {
         font-size: 2rem;
     }
+
     .kontakt-seksjon {
         display: flex;
         flex-direction: column;
@@ -165,20 +180,25 @@
         padding-top: 40px;
         gap: 0px;
     }
+
     .kontakt-seksjon h1 {
         font-size: 2rem;
     }
+
     .kontakt-seksjon h2 {
         display: none;
     }
+
     .kjapp-kontakt {
         gap: 5px;
         margin-top: 15px;
         margin-bottom: 50px;
     }
+
     .kjapp-kontakt a {
         font-size: 1rem;
     }
+
     #kontakt-knapp {
         width: 100%;
         background-color: var(--accent);
@@ -187,22 +207,33 @@
     }
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:600px) {
+    #kontakt-mobil {
+        background-color: var(--accent);
+        color: var(--white);
+        padding: 10px 20px 10px 20px;
+        border-radius: 6px;
+    }
     .logo-name {
         display: none;
     }
+
     .mobile-links {
         width: 100vw;
         left: 0;
         transform: translateX(0);
         transform: translateY(-100vh);
         font-size: 3rem;
+        border: none;
     }
+
     .mobile-links-container {
         height: 70%;
         font-size: 2rem;
     }
+
     .mobile-links.open {
-        transform: translateY(0);;
+        transform: translateY(0);
+        ;
     }
 }

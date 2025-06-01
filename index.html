@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vebjørn Design</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./responsive.css">
     <link rel="stylesheet" href="./mobil-progressbar.css">
+    <link rel="stylesheet" href="./footer.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/png" href="./img/logo-ikon.png">
@@ -40,9 +43,13 @@
     </nav>
     <ul class="mobile-links" id="mobile-links">
         <div class="mobile-links-container">
-            <li class="link">Tjenester</li>
+            <a class="mobil-link" href="#planer">
+                <li class="link">Tjenester</li>
+            </a>
             <li class="link">Om VD</li>
-            <li id="kontakt">Kontakt<i class="fa-solid fa-paper-plane"></i></li>
+            <a class="mobil-link" href="#kontakt-seksjon">
+                <li id="kontakt-mobil">Kontakt<i class="fa-solid fa-paper-plane"></i></li>
+            </a>
         </div>
     </ul>
     <section id="hjem" class="top">
@@ -344,8 +351,35 @@
                 <button id="kontakt-knapp" type="submit">Send melding</button>
             </form>
         </div>
-
     </section>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-box-logo">
+                <div class="footer-logo">
+                    <img src="./img/logo-ikon.png" alt="">
+                    <h2>Vebjørn Design</h2>
+                </div>
+                <p>"Design som <span class="skille">skiller</span> seg ut. Kode som fungerer"</p>
+            </div>
+            <div class="footer-box">
+                <div class="footer-links">
+                    <h2>Snarveier</h2>
+                    <a href="">Til toppen</a>
+                    <a href="">Tjenester</a>
+                    <a href="">Om VD</a>
+                    <a href="">Personvern</a>
+                </div>
+                <div class="footer-links">
+                    <h2>Kontakt oss</h2>
+                    <a href="tel:+4799459557"><i class="fa-solid fa-phone"></i> +47 994 59557</a>
+                    <a href="mailto:vebjornoyan@gmail.com"><i class="fa-solid fa-envelope"></i>vebjornoyan@gmail.com</a>
+                </div>
+            </div>
+        </div>
+        <p class="footer-copyright">&copy; Vebjørn Design 2025 - Alle rettigheter reservert</p>
+    </footer>
 
     <i id="mode" class="fa-solid fa-moon"></i>
 
