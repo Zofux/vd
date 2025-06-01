@@ -46,7 +46,7 @@ if (window.matchMedia("(max-width: 800px)").matches) {
         const windowHeight = window.innerHeight;
         const sectionHeight = section.offsetHeight;
 
-        const offsetStart = sectionHeight * 0.4;
+        const offsetStart = sectionHeight * 0.3;
         const scrollPosition = windowHeight - sectionRect.top;
         const progress = Math.min(Math.max((scrollPosition - offsetStart) / (sectionHeight - offsetStart), 0), 1);
         const progressPixels = progress * barHeight;
