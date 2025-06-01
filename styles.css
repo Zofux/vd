@@ -478,9 +478,9 @@ button:focus {
   transform: translateY(-3px);
 }
 
-.kontakt-skjema textarea {
+textarea {
   resize: none;
-  min-height: 100px;
+  line-height: 1.5;
 }
 
 .input-wrapper {

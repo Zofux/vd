@@ -122,3 +122,28 @@ if (window.matchMedia("(min-width: 800px)").matches) {
     });
     window.addEventListener('scroll', handleScroll);
 }
+
+const textareas = document.querySelectorAll('textarea');
+
+textareas.forEach(textarea => {
+    textarea.style.overflow = 'hidden'; // skjul scrollbars
+
+    textarea.addEventListener('input', () => {
+        // Hent nåværende høyde
+        const prevHeight = textarea.offsetHeight;
+
+        // Sett til auto for å måle ny høyde
+        textarea.style.height = 'auto';
+        const newHeight = textarea.scrollHeight;
+
+        // Sett tilbake til forrige høyde (for overgang)
+        textarea.style.height = prevHeight + 'px';
+
+        // Tving repaint
+        void textarea.offsetWidth;
+
+        // Bruk overgang
+        textarea.style.transition = 'height 0.2s ease';
+        textarea.style.height = newHeight + 'px';
+    });
+});
