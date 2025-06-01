@@ -98,6 +98,9 @@ footer i {
 }
 
 @media screen and (max-width: 860px) {
+    .kontakt-skjema {
+        padding-bottom: 100px;
+    }
     footer {
         position: relative;
         justify-content: center;
