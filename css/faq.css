@@ -1,0 +1,80 @@
+.faq {
+    padding: 50px 200px 100px 200px;
+    color: var(--text);
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.faq h1 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.faq-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.faq-card {
+    background-color: var(--second);
+    padding: 20px;
+    border-radius: 4px;
+    align-items: stretch;
+    overflow-y: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.faq-svar {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.faq-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    gap: 25px;
+}
+
+.faq-card i {
+    transition: transform 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.faq-card.active i {
+    transform: rotate(90deg);
+}
+
+.faq a {
+    color: #0078ce;
+}
+.faq a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1100px){
+    .faq {
+        padding: 50px 8% 100px 8%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .faq {
+        padding: 50px 15px 50px 15px;
+    }
+    .faq-cards {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .faq-spørsmål {
+        font-size: 1.2rem;
+    }
+}

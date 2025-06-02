@@ -10,10 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/png" href="./img/logo-ikon.png">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="./responsive.css">
-    <link rel="stylesheet" href="./footer.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <style>
         :root {
             --bg: #fbfbfe;
@@ -54,9 +53,11 @@
             padding: 70px 50px 100px 100px;
             box-sizing: border-box;
         }
+
         .personvern h1 {
             margin-bottom: 10px;
         }
+
         .personvern h2 {
             margin-top: 20px;
         }
@@ -70,10 +71,12 @@
                 padding: 70px 20px 100px 20px;
             }
         }
+
         @media screen and (max-width: 400px) {
             .personvern h1 {
                 font-size: 1.5rem;
             }
+
             .personvern h2 {
                 font-size: 1.2rem;
                 font-weight: bolder;
@@ -85,7 +88,7 @@
 <body>
 
 
-    <nav>
+    <nav id="nav" class="nav">
         <div class="logo">
             <a href="#hjem">
                 <img src="./img/logo-ikon.png" alt="">
@@ -93,11 +96,18 @@
             </a>
         </div>
         <ul class="links">
-            <a href="/">
-                <li class="link">Om VD</li>
+            <a href="/index.html#planer">
+                <li class="link">Tjenester</li>
+            </a>
+            <li class="link">Om VD</li>
+            <a href="/FAQ.html">
+                <li class="link">FAQ</li>
             </a>
             <a href="/">
                 <li class="link">Til forsiden</li>
+            </a>
+            <a href="/index.html#kontakt-seksjon">
+                <li id="kontakt">Kontakt<i class="fa-solid fa-paper-plane"></i></li>
             </a>
         </ul>
         <div class="burger" id="burger">
@@ -108,11 +118,20 @@
     </nav>
     <ul class="mobile-links" id="mobile-links">
         <div class="mobile-links-container">
-             <a href="/">
+            <a class="mobil-link" href="/index.html#planer">
+                <li class="link">Tjenester</li>
+            </a>
+            <a class="mobil-link" href="">
                 <li class="link">Om VD</li>
             </a>
-            <a href="/">
-                <li class="link">Til forsiden</i></li>
+            <a class="mobil-link" href="/FAQ.html">
+                <li class="link">FAQ</li>
+            </a>
+            <a class="mobil-link" href="/">
+                <li class="link">Til forsiden</li>
+            </a>
+            <a class="mobil-link" href="/index.html#kontakt-seksjon">
+                <li class="link">Kontakt</li>
             </a>
         </div>
     </ul>
