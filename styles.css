@@ -303,7 +303,8 @@ nav ul {
 
 .plan-price {
   margin-bottom: 30px;
-  margin-top: 10px;
+  margin-top: 5px;
+  color: var(--indent);
 }
 
 .plan-features li {
