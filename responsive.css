@@ -5,9 +5,12 @@
     --indent: #747385;
     --link-color: rgb(49, 103, 240);
     --text: #050315;
-    --accent: #d15361;
+    --accent: #EE2A47;
+    ;
     --dark-accent: #871c28;
     --white: #fbfbfe;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --black: #010104;
 }
 
 [data-theme="dark"] {
@@ -16,10 +19,12 @@
     --indent: #747385;
     --text: #ebe9fc;
     --nav-line: rgba(255, 255, 255, 0.1);
-    --accent: #d15361;
+    --accent: #EE2A47;
     --dark-accent: #620510;
     --link-color: rgb(49, 103, 240);
     --white: #fbfbfe;
+    --shadow: #ebe9fc0c;
+    --black: #010104;
 }
 
 
@@ -57,6 +62,10 @@
     display: none;
 }
 
+.mobile-links-container .link {
+    font-weight: bolder;
+}
+
 @media screen and (max-width:1200px) {
     .kontakt-seksjon {
         padding: 40px;
@@ -77,10 +86,9 @@
 }
 
 @media screen and (max-width: 800px) {
-    #burger {
+    .burger {
         position: relative;
         display: flex;
-        z-index: 999;
     }
 
     #burger.active .topp,
@@ -135,7 +143,6 @@
     .mobile-links-container {
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: space-around;
         height: 70%;
         font-size: 1.2rem;
@@ -206,6 +213,10 @@
         color: var(--white);
         font-weight: bolder;
     }
+
+    .nav.open {
+        border: none;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -236,6 +247,8 @@
     .mobile-links-container {
         height: 70%;
         font-size: 2rem;
+        display: flex;
+        text-align: left;
     }
 
     .mobile-links.open {

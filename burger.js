@@ -1,5 +1,6 @@
 const burger = document.getElementById('burger');
 const links = document.getElementById('mobile-links');
+const nav = document.getElementById("nav")
 
 burger.addEventListener('click', () => {
     if (burger.classList.contains('rotate')) {
@@ -17,6 +18,7 @@ burger.addEventListener('click', () => {
     }
 
     links.classList.toggle("open")
+    nav.classList.toggle("open")
 });
 
 const mobilLinks = document.querySelectorAll(".mobil-link")
@@ -37,5 +39,6 @@ mobilLinks.forEach(link => {
             }, 150); // delay før rotasjon (kan justeres)
         }
         links.classList.toggle("open")
+        nav.classList.toggle("open")
     })
 })
