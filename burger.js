@@ -19,6 +19,7 @@ burger.addEventListener('click', () => {
 
     links.classList.toggle("open")
     nav.classList.toggle("open")
+    document.body.classList.toggle('lock-scroll');
 });
 
 const mobilLinks = document.querySelectorAll(".mobil-link")
@@ -40,5 +41,6 @@ mobilLinks.forEach(link => {
         }
         links.classList.toggle("open")
         nav.classList.toggle("open")
+        document.body.classList.toggle('lock-scroll');
     })
 })

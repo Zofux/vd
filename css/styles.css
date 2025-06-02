@@ -572,3 +572,7 @@ textarea {
   color: var(--accent);
   transition: all .3s ease-in-out;
 }
+
+body.lock-scroll {
+  overflow: hidden;
+}
