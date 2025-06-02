@@ -167,6 +167,7 @@
 
     .top-1 h1 {
         font-size: 2rem;
+        flex: 2;
     }
 
     .planer h1 {
@@ -208,12 +209,17 @@
 }
 
 @media screen and (max-width:600px) {
+    .cta-buttons {
+        display: none;
+    }
+
     #kontakt-mobil {
         background-color: var(--accent);
         color: var(--white);
         padding: 10px 20px 10px 20px;
         border-radius: 6px;
     }
+
     .logo-name {
         display: none;
     }

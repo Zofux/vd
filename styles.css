@@ -152,7 +152,7 @@ nav ul {
 
 .top h1 {
   font-size: 3rem;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .top {
@@ -173,6 +173,12 @@ nav ul {
 
 .top-2 {
   flex: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  .top-1 {
+    flex: 2;
+  }
 }
 
 .skille {
@@ -528,4 +534,40 @@ textarea {
 
 .stjerne {
   color: var(--accent);
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.cta-buttons a {
+  padding: 10px 20px 10px 20px;
+  border-radius: 6px;
+  font-weight: bolder;
+  font-size: .9rem;
+}
+
+.cta-1 {
+  background-color: var(--accent);
+  color: var(--white);
+  border: none;
+  transition: all .3s ease-in-out;
+}
+.cta-1:hover, .cta-2:hover {
+  transform: translateY(-3px);
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+.cta-2:hover {
+  background-color: var(--accent);
+  color: var(--white);
+}
+
+.cta-2 {
+  background-color: var(--bg);
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  transition: all .3s ease-in-out;
 }
