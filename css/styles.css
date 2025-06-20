@@ -154,8 +154,14 @@ nav ul a {
 .top h1 {
   font-size: 3rem;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 
+@media screen and (max-width: 800px){
+  .top h1 {
+    margin-bottom: 15px;
+  }
+}
 
 .top {
   display: flex;
