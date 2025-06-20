@@ -156,6 +156,7 @@ nav ul a {
   margin-bottom: 20px;
 }
 
+
 .top {
   display: flex;
   padding: 100px;
@@ -167,7 +168,6 @@ nav ul a {
 .top-1 {
   flex: 2;
 }
-
 .top-2 {
   flex: 1;
 }
@@ -176,6 +176,7 @@ nav ul a {
   padding: 30px 250px 100px 100px;
   line-height: 1.9;
   color: var(--text);
+  margin-bottom: 50px;
 }
 
 .hvem a {
@@ -270,6 +271,22 @@ nav ul a {
   background-color: var(--bg);
   border: 1px solid var(--accent);
   border-radius: 6px;
+}
+
+.track-card {
+  transition: all 0.3s ease-in-out;
+  border: 1px solid var(--second);
+  padding: 10px;
+  border-radius: 6px;
+}
+.track-card:hover {
+  border: 1px solid var(--dark-accent);
+  background-color: var(--accent);
+  opacity: .9;
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-6px);
 }
 
 .progress-fill {
