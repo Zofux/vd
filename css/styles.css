@@ -620,6 +620,6 @@ body.lock-scroll {
 .progress-anker {
   display: block;
   position: relative;
-  top: -4rem;
+  top: -7rem;
   visibility: hidden;
 }
