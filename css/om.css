@@ -132,3 +132,11 @@
         font-size: 2.3rem;
     }
 }
+@media screen and (max-width: 450px){
+    .om h1 {
+        font-size: 2rem;
+    }
+    .om h2 {
+        font-size: 1.5rem;
+    }
+}
