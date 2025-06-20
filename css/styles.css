@@ -616,3 +616,10 @@ textarea {
 body.lock-scroll {
   overflow: hidden;
 }
+
+.progress-anker {
+  display: block;
+  position: relative;
+  top: -4rem;
+  visibility: hidden;
+}
