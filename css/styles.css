@@ -603,6 +603,9 @@ textarea {
   .cta-buttons {
     margin-top: 30px;
   }
+  .faq {
+    text-align: center;
+  }
 }
 
 .cta-buttons a {
