@@ -157,12 +157,6 @@ nav ul a {
   margin-top: 10px;
 }
 
-@media screen and (max-width: 800px){
-  .top h1 {
-    margin-bottom: 15px;
-  }
-}
-
 .top {
   display: flex;
   padding: 100px;
@@ -603,6 +597,12 @@ textarea {
   display: flex;
   gap: 20px;
   margin-top: 50px;
+}
+
+@media screen and (max-width: 800px){
+  .cta-buttons {
+    margin-top: 25px;
+  }
 }
 
 .cta-buttons a {
