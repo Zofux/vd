@@ -233,6 +233,11 @@
         align-items: flex-start;
     }
 
+    .top, .hvem {
+        padding: 25px;
+        padding-bottom: 0px;
+    }
+
     #kontakt-mobil {
         background-color: var(--accent);
         color: var(--white);
