@@ -86,10 +86,12 @@
 }
 
 @media screen and (max-width: 800px) {
+
     nav {
         position: sticky;
         border-bottom: 1px solid var(--nav-line);
     }
+
     .burger {
         position: relative;
         display: flex;
@@ -161,6 +163,7 @@
         padding: 50px;
         padding-bottom: 0px;
     }
+
     .hvem {
         padding: 50px;
         margin-bottom: 50px;
@@ -226,6 +229,10 @@
     }
 }
 
+#cta-mobil {
+    display: none;
+}
+
 @media screen and (max-width:600px) {
     .cta-buttons {
         display: flex;
@@ -233,7 +240,8 @@
         align-items: flex-start;
     }
 
-    .top, .hvem {
+    .top,
+    .hvem {
         margin-top: 20px;
         padding: 25px;
     }

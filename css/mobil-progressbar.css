@@ -3,6 +3,12 @@
 }
 
 @media screen and (max-width: 800px) {
+     #cta-mobil {
+        display: block;
+    }
+    #cta-pc {
+        display: none;
+    }
     .progress {
         display: none;
     }

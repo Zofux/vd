@@ -212,12 +212,6 @@ nav ul a {
   color: var(--accent);
 }
 
-#progress {
-  display: block;
-  position: relative;
-  top: 70rem;
-  visibility: hidden;
-}
 
 .icon {
   position: relative;
