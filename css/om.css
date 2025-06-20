@@ -48,6 +48,12 @@
         max-width: 100%;
         padding: 50px;
     }
+    .team {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .team-card {
         width: 250px;
     }
