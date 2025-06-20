@@ -117,6 +117,7 @@
 @media screen and (max-width: 750px){
     .prosjekt {
         flex-direction: column;
+        gap: 20px;
     }
     #prosjekt-reverse {
         flex-direction: column-reverse;
