@@ -10,6 +10,7 @@
   --white: #fbfbfe;
   --shadow: rgba(0, 0, 0, 0.1);
   --black: #010104;
+  --motsatt: #0101043c;
 }
 
 [data-theme="dark"] {
@@ -25,6 +26,7 @@
   --white: #fbfbfe;
   --shadow: #ebe9fc0c;
   --black: #010104;
+  --motsatt: #9e9e9e09;
 }
 
 html {

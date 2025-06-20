@@ -36,20 +36,18 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    align-items: center;
 }
 .team-tittel {
-    color: var(--white);
-    background-color: var(--accent);
-    font-weight: bold;
-    padding: 5px 20px 5px 20px;
-    border-radius: 40px;
+    opacity: .8;
 }
 
 .om-line {
     height: 1px;
     width: 100%;
     background-color: var(--nav-line);
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .grunner-til-vevio {
@@ -58,6 +56,41 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
+}
+
+.prosjekt {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+.prosjekt div {
+    flex: 1;
+}
+.prosjekt img {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--nav-line);
+}
+
+.prosjekt p {
+    line-height: 1.3;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.prosjekt-link {
+    padding: 5px 20px 5px 20px;
+    background-color: var(--accent);
+    border-radius: 40px;
+    color: var(--white);
+    transition: all .3s ease-in-out;
+}
+
+.prosjekt div span {
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 800px){
@@ -79,6 +112,14 @@
     }
     .grunner-til-vevio {
         grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 750px){
+    .prosjekt {
+        flex-direction: column;
+    }
+    #prosjekt-reverse {
+        flex-direction: column-reverse;
     }
 }
 @media screen and (max-width: 500px){
