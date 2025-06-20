@@ -1,4 +1,4 @@
-section {
+.om-section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,3 +57,28 @@ line-height: 2;
     }
 }
 
+.portfolio {
+    margin-bottom: 100px;
+    padding: 50px;
+}
+.portfolio-card {
+    background-color: var(--second);
+    color: var(--text);
+    border-radius: 6px;
+    padding: 10px;
+    transition: all .3s ease-in-out;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+.portfolio-card img {
+    width: auto;
+    max-height: 300px;
+    margin-bottom: 20px;
+}

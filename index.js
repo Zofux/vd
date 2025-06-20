@@ -20,7 +20,7 @@ toggle.addEventListener('click', () => {
 });
 
 
-const text = "Kode som fungerer\"";
+const text = "Kode som fungerer";
 const text2 = "Å lage nettsider er vanskelig, hos oss er det enkelt.";
 
 const element = document.getElementById("typewriter");
@@ -40,7 +40,7 @@ async function type(text, target, speed = 50) {
 window.onload = async function () {
     await sleep(500); // delay før første tekst
     await type(text, element, 50);
-    await type(text2, element2, 40);
+    //await type(text2, element2, 40);
 };
 
 

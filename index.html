@@ -37,7 +37,7 @@
                 <li class="link">FAQ</li>
             </a>
             <a href="#kontakt-seksjon">
-                <li id="kontakt">Kontakt<i class="fa-solid fa-paper-plane"></i></li>
+                <li id="kontakt">Kontakt oss</li>
             </a>
         </ul>
         <div class="burger" id="burger">
@@ -65,7 +65,7 @@
     <section id="hjem" class="top">
         <div class="top-1">
             <h1>
-                "Design som <span class="skille">skiller</span> seg ut.
+                Design som <span class="skille">skiller</span> seg ut.
                 <span id="typewriter"></span>
             </h1>
             <div class="container">
@@ -80,11 +80,15 @@
         </div>
     </section>
 
-    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#0099ff" fill-opacity="1"
-            d="M0,96L30,101.3C60,107,120,117,180,138.7C240,160,300,192,360,197.3C420,203,480,181,540,160C600,139,660,117,720,128C780,139,840,181,900,181.3C960,181,1020,139,1080,138.7C1140,139,1200,181,1260,208C1320,235,1380,245,1410,250.7L1440,256L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
-        </path>
-    </svg>
+    <section class="hvem">
+        <h1>Hvem er vi?</h1>
+        <p>Vi er et lite, dedikert webstudio basert i Trondheim, med lidenskap for moderne, brukervennlige og
+            skreddersydde nettsider. Med solid teknisk kompetanse og et skarpt øye for design, bygger vi løsninger som
+            ikke bare ser bra ut – men som også <span class="tykk">fungerer ekstremt bra!</span> Vi tror på tett dialog,
+            gjennomtenkte detaljer og
+            nettsider som gir resultater. Dersom du er interessert kan du <a href="#kontakt-seksjon">kontakte oss</a>
+        </p>
+    </section>
 
     <section id="progress" class="progress">
         <h1>Din vei til en ny nettside</h1>
@@ -241,12 +245,6 @@
         </div>
     </section>
 
-    <svg class="icon2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#0099ff" fill-opacity="1"
-            d="M0,160L21.8,170.7C43.6,181,87,203,131,218.7C174.5,235,218,245,262,256C305.5,267,349,277,393,256C436.4,235,480,181,524,144C567.3,107,611,85,655,101.3C698.2,117,742,171,785,208C829.1,245,873,267,916,261.3C960,256,1004,224,1047,229.3C1090.9,235,1135,277,1178,245.3C1221.8,213,1265,107,1309,106.7C1352.7,107,1396,213,1418,266.7L1440,320L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z">
-        </path>
-    </svg>
-
     <section id="planer" class="planer">
         <h1 data-aos="fade-up">Finn pakken som passer deg</h1>
         <div class="planer-kort">
@@ -329,6 +327,8 @@
     <section id="kontakt-seksjon" class="kontakt-seksjon">
         <div class="kontakt-top">
             <h1>La oss lage noe <span class="skille">kult</span> sammen</h1>
+            <p>Vi tar gjerne en prat! Enten du har spørsmål, ønsker et tilbud, eller bare vil utforske mulighetene, er
+                du hjertelig velkommen til å ta kontakt med oss. Vi svarer raskt og gleder oss til å høre fra deg.</p>
             <div class="kjapp-kontakt">
                 <a href="tel:+4799459557" class="kjapp-kontakt-link"><i class="fa-solid fa-phone"></i> +47 994 59
                     557</a>
@@ -337,34 +337,34 @@
             </div>
         </div>
 
-        <div>
-            <h1>Send oss en melding</h1>
-            <form name="kontakt" class="kontakt-skjema" data-netlify="true" method="POST" netlify-honeypot="bot-field">
-                <input type="hidden" name="form-name" value="kontakt" />
+        <div></div>
+        <form name="kontakt" class="kontakt-skjema" data-netlify="true" method="POST" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="kontakt" />
 
-                <div class="input-wrapper">
-                    <input type="text" name="navn" id="navn" placeholder=" " required />
-                    <label for="navn">Navn <span class="stjerne">*</span></label>
-                </div>
+            <div class="input-wrapper">
+                <input type="text" name="navn" id="navn" placeholder=" " required />
+                <label for="navn">Navn <span class="stjerne">*</span></label>
+            </div>
 
-                <div class="input-wrapper">
-                    <input type="email" name="epost" id="epost" placeholder=" " required />
-                    <label for="epost">E-post <span class="stjerne">*</span></label>
-                </div>
+            <div class="input-wrapper">
+                <input type="email" name="epost" id="epost" placeholder=" " required />
+                <label for="epost">E-post <span class="stjerne">*</span></label>
+            </div>
 
-                <div class="input-wrapper">
-                    <input type="tel" name="telefon" id="telefon" placeholder=" " />
-                    <label for="telefon">Telefonnummer</label>
-                </div>
+            <div class="input-wrapper">
+                <input type="tel" name="telefon" id="telefon" placeholder=" " />
+                <label for="telefon">Telefonnummer</label>
+            </div>
 
-                <div class="input-wrapper">
-                    <textarea name="melding" id="melding" rows="5" placeholder=" " required></textarea>
-                    <label for="melding">Hva kan vi hjelpe deg med? <span class="stjerne">*</span></label>
-                </div>
+            <div class="input-wrapper">
+                <textarea name="melding" id="melding" rows="5" placeholder=" " required></textarea>
+                <label for="melding">Hva kan vi hjelpe deg med? <span class="stjerne">*</span></label>
+            </div>
 
-
-                <button id="kontakt-knapp" type="submit">Send melding</button>
-            </form>
+            <p>Ved å sende inn skjemaet godtar du vår <a href="./personvern.html" style="color: var(--link-color);">personvernerklæring</a>, og samtykker til at vi behandler
+                informasjonen din i tråd med denne.</p>
+            <button id="kontakt-knapp" type="submit">Send melding</button>
+        </form>
         </div>
     </section>
 
