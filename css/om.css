@@ -15,6 +15,7 @@
 .om h1 {
     font-size: 3rem;
     margin-bottom: 10px;
+    margin-top: 100px;
 }
 
 .highlight {
@@ -44,7 +45,25 @@
     border-radius: 40px;
 }
 
+.om-line {
+    height: 1px;
+    width: 100%;
+    background-color: var(--nav-line);
+    margin-bottom: 20px;
+}
+
+.grunner-til-vevio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
 @media screen and (max-width: 800px){
+    .om h1 {
+        font-size: 2rem;
+    }
     .om {
         max-width: 100%;
         padding: 50px;
@@ -58,6 +77,9 @@
     .team-card {
         width: 250px;
     }
+    .grunner-til-vevio {
+        grid-template-columns: 1fr;
+    }
 }
 @media screen and (max-width: 500px){
     .om {
@@ -68,15 +90,3 @@
         font-size: 2.3rem;
     }
 }
-
-.om-line {
-    height: 1px;
-    width: 100%;
-    background-color: var(--nav-line);
-    margin-bottom: 20px;
-}
-
-.team {
-    margin-top: 100px;
-}
-
