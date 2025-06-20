@@ -97,6 +97,7 @@ footer i {
 
 .footer-copyright {
     color: rgba(255, 255, 255, 0.1);
+    margin-top: 10px;
 }
 
 @media screen and (max-width: 860px) {
@@ -135,4 +136,8 @@ footer i {
     footer {
         gap: 50px;
     }
+}
+
+.footer-bottom {
+    text-align: center;
 }

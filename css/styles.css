@@ -273,22 +273,6 @@ nav ul a {
   border-radius: 6px;
 }
 
-.track-card {
-  transition: all 0.3s ease-in-out;
-  border: 1px solid var(--second);
-  padding: 10px;
-  border-radius: 6px;
-}
-.track-card:hover {
-  border: 1px solid var(--dark-accent);
-  background-color: var(--accent);
-  opacity: .9;
-  color: var(--white);
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  transform: translateY(-6px);
-}
-
 .progress-fill {
   position: absolute;
   width: 100%;

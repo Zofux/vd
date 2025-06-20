@@ -15,26 +15,32 @@
     font-size: 3rem;
     margin-bottom: 10px;
 }
-.om h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    margin-top: 30px;
-}
-.om p, .om ul {
-    margin-top: 5px;
-    margin-bottom: 20px;
-}
 
 .highlight {
     color: var(--accent);
     font-weight: bold;
 }
-.om ul {
-line-height: 2;
+
+.team-card {
+    width: 300px;
 }
-.om i {
-    color: var(--accent);
-    margin-right: 10px;
+.team-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+.team-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.team-tittel {
+    color: var(--white);
+    background-color: var(--accent);
+    font-weight: bold;
+    padding: 5px 20px 5px 20px;
+    border-radius: 40px;
 }
 
 @media screen and (max-width: 800px){
@@ -42,7 +48,9 @@ line-height: 2;
         max-width: 100%;
         padding: 50px;
     }
-    
+    .team-card {
+        width: 250px;
+    }
 }
 @media screen and (max-width: 500px){
     .om {
@@ -52,33 +60,16 @@ line-height: 2;
     .om h1 {
         font-size: 2.3rem;
     }
-    .om h2 {
-        font-size: 2rem;
-    }
 }
 
-.portfolio {
-    margin-bottom: 100px;
-    padding: 50px;
-}
-.portfolio-card {
-    background-color: var(--second);
-    color: var(--text);
-    border-radius: 6px;
-    padding: 10px;
-    transition: all .3s ease-in-out;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.portfolio-card:hover {
-    transform: translateY(-5px);
-    transition: all .3s ease-in-out;
-    cursor: pointer;
-}
-.portfolio-card img {
-    width: auto;
-    max-height: 300px;
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: var(--nav-line);
     margin-bottom: 20px;
 }
+
+.team {
+    margin-top: 100px;
+}
+
